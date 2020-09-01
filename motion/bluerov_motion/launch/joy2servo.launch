@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="servo_signal_generation_node" pkg="bluerov_motion"
+      type="topic_servo_signal_generation.py" output="screen" />
+
+</launch>

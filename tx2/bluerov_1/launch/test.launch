@@ -1,0 +1,18 @@
+<launch>
+  <node name="Publisher" pkg="bluerov_1"
+     type="topic_publisher.py" output="screen" />
+
+  <node name="Subscriber" pkg="bluerov_1"
+     type="topic_subscriber.py" output="screen" />
+
+  <node name="joy_node" pkg="joy"
+     type="joy_node" output="screen" />
+
+  <node name="joy_receive_node" pkg="bluerov_1"
+      type="topic_joy_receive.py" output="screen" />
+
+  <node name="joy2servo_convert_node" pkg="bluerov_1"
+      type="topic_joy2servo_convert.py" output="screen" />
+
+
+</launch>
